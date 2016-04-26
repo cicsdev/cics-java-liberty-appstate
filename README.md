@@ -15,8 +15,7 @@ This project provides a simple RESTful application state browser for Liberty usi
 The sample  code can be added to a dynamic web project and deployed into a CICS Liberty JVM server as a web archive (WAR).
 
 
-To deploy, the sample code needs to be added to a dynamic Web project along with the sample web.xml
-Then add the following Liberty features: monitor-1.0 and restconnector-1.0. Once deployed RESTful GET requests can be sent with a web browser 
+To configure the Liberty server add the following Liberty features: monitor-1.0 and restConnector-1.0. Once deployed RESTful GET requests can be sent with a web browser 
 using the following syntax assuming the project was deployed with the com.ibm.cicsdev.jmxquery web context root:
 * http://host:port/com.ibm.cicsdev.jmxquery/app/state - To list all available web applications
 * http://host:port/com.ibm.cicsdev.jmxquery/app/state/<app>  - To list the state of an individual web application
