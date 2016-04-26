@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>com.ibm.cicsdev.jmxquery</display-name>
+<servlet>
+    <description>IBM JAX-RS service</description>
+    <display-name>IBM JAX-RS service</display-name>
+    <servlet-name>IBMJAXRS</servlet-name>
+    <servlet-class>com.ibm.websphere.jaxrs.server.IBMRestServlet</servlet-class>
+    <init-param>
+        <param-name>javax.ws.rs.Application</param-name>
+        <param-value>com.ibm.cicsdev.jmxquery.AppConfig</param-value>
+    </init-param>
+</servlet>
+<servlet-mapping>
+    <servlet-name>IBMJAXRS</servlet-name>
+    <url-pattern>/app/*</url-pattern>
+</servlet-mapping>
+</web-app>
