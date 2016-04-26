@@ -28,7 +28,7 @@ For example:
 
 
 #Reference material
-* Creating RESTful applications with CICS Liberty (https://developer.ibm.com/cics/2016/03/11/java-for-cics-developing-restful-web-services-in-liberty-with-jax-rs/ "Creating RESTful applications with CICS Liberty").
-* Accessing Liberty’s JMX REST APIs (https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis "Accessing Liberty’s JMX REST APIs").
+* Creating RESTful applications with CICS Liberty (https://developer.ibm.com/cics/2016/03/11/java-for-cics-developing-restful-web-services-in-liberty-with-jax-rs/)
+* Accessing Liberty’s JMX REST APIs (https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
 
 
