@@ -17,8 +17,8 @@ The sample  code can be added to a dynamic web project and deployed into a CICS 
 
 To configure the Liberty server add the following Liberty features: monitor-1.0, localConnector-1.0, jaxrs-1.1. Once deployed RESTful GET requests can be sent with a web browser 
 using the following syntax assuming the project was deployed with the com.ibm.cicsdev.jmxquery web context root:
-* http://host:port/com.ibm.cicsdev.jmxquery/app/state - To list all available web applications
-* http://host:port/com.ibm.cicsdev.jmxquery/app/state/appName  - To list the state of an individual web application, where appName is the web application name 
+* http://host:port/com.ibm.cicsdev.jmxquery/state - To query all available web applications
+* http://host:port/com.ibm.cicsdev.jmxquery/state/appName  - To query the state of an individual web application, where appName is the web application name 
 
 Requests will return a JSON object containing the application and state as reported by the WebSphere:service=com.ibm.websphere.application.ApplicationMBean
 
@@ -28,7 +28,7 @@ For example:
 
 
 #Reference material
-* Creating RESTful applications with CICS Liberty (https://developer.ibm.com/cics/2016/03/11/java-for-cics-developing-restful-web-services-in-liberty-with-jax-rs/)
+* Querying Liberty web applications using JMX (https://developer.ibm.com/cics/2016/04/28/cics-java-querying-liberty-web-applications-using-jmx/)
 * Accessing Liberty’s JMX REST APIs (https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
 
 
