@@ -5,12 +5,12 @@ RESTful application state browser
 This project provides a simple RESTful application state browser for Liberty using the WebSphere JMX Mbeans support.
 
 
-#Pre-reqs
+## Pre-reqs
 
     CICS TS V5.2 or later
     Eclipse with WebSphere Developer Tools and CICS Explorer SDK installed
 
-#Configuration
+## Configuration
 
 The sample  code can be added to a dynamic web project and deployed into a CICS Liberty JVM server as a web archive (WAR).
 
@@ -28,7 +28,7 @@ For example:
 
 
 #Reference material
-* Querying Liberty web applications using JMX (https://developer.ibm.com/cics/2016/04/28/cics-java-querying-liberty-web-applications-using-jmx/)
-* Accessing Liberty’s JMX REST APIs (https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
+* [Querying Liberty web applications using JMX](https://developer.ibm.com/cics/2016/04/28/cics-java-querying-liberty-web-applications-using-jmx/)
+* [Accessing Liberty’s JMX REST APIs](https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
 
 
