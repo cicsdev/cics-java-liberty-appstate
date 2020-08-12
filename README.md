@@ -1,6 +1,5 @@
 # cics-java-liberty-appstate
 
-RESTful application state browser
 
 This project provides a simple RESTful application state browser for Liberty using the WebSphere JMX Mbeans support.
 
@@ -14,21 +13,28 @@ This project provides a simple RESTful application state browser for Liberty usi
 
 The sample  code can be added to a dynamic web project and deployed into a CICS Liberty JVM server as a web archive (WAR).
 
+To configure the Liberty server add the following Liberty features:
+```
+- monitor-1.0
+- localConnector-1.0
+- jaxrs-1.1
+```
 
-To configure the Liberty server add the following Liberty features: monitor-1.0, localConnector-1.0, jaxrs-1.1. Once deployed RESTful GET requests can be sent with a web browser 
-using the following syntax assuming the project was deployed with the com.ibm.cicsdev.jmxquery web context root:
+Once deployed RESTful GET requests can be sent with a web browser using the following syntax assuming the project was deployed with the com.ibm.cicsdev.jmxquery web context root:
 * http://host:port/com.ibm.cicsdev.jmxquery/state - To query all available web applications
 * http://host:port/com.ibm.cicsdev.jmxquery/state/appName  - To query the state of an individual web application, where appName is the web application name 
 
 Requests will return a JSON object containing the application and state as reported by the WebSphere:service=com.ibm.websphere.application.ApplicationMBean
 
 For example:
+```json
 {"appName":"hello","State":"STOPPED"}
+```
 
 
 
-#Reference material
-* [Querying Liberty web applications using JMX](https://developer.ibm.com/cics/2016/04/28/cics-java-querying-liberty-web-applications-using-jmx/)
-* [Accessing Liberty’s JMX REST APIs](https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
+## Reference material
+* [Accessing Libertyâ€™s JMX REST APIs](https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
+* [Querying Liberty web applications using JMX](blog.md)
 
 
