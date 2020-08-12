@@ -23,12 +23,14 @@ using the following syntax assuming the project was deployed with the com.ibm.ci
 Requests will return a JSON object containing the application and state as reported by the WebSphere:service=com.ibm.websphere.application.ApplicationMBean
 
 For example:
+```json
 {"appName":"hello","State":"STOPPED"}
+```
 
 
 
 #Reference material
-* [Querying Liberty web applications using JMX](https://developer.ibm.com/cics/2016/04/28/cics-java-querying-liberty-web-applications-using-jmx/)
-* [Accessing Liberty’s JMX REST APIs](https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
+* [Accessing Libertyâ€™s JMX REST APIs](https://developer.ibm.com/wasdev/docs/accessing-libertys-jmx-rest-apis)
+* [Querying Liberty web applications using JMX](blog.md)
 
 
