@@ -1,6 +1,5 @@
 # cics-java-liberty-appstate
 
-#RESTful application state browser
 
 This project provides a simple RESTful application state browser for Liberty using the WebSphere JMX Mbeans support.
 
